@@ -1,0 +1,100 @@
+@font-face {
+    font-family: MegaPunch;
+    src: url(../fonts/Megapunch.otf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto.ttf);
+}
+
+:root
+{
+    --header-height: 50px;
+}
+
+*:not(#logo)
+{
+    font-family: Roboto;
+}
+
+body
+{
+    margin: 0;
+}
+
+header
+{
+    height: var(--header-height);
+    background-color: orange;
+}
+
+#logo
+{
+    height: var(--header-height);
+    margin: 0;
+    font-family: MegaPunch;
+    text-align: center;
+}
+
+a:link, a:visited, a:hover, a:active
+{
+    text-decoration: none;
+}
+
+nav
+{
+    display: flex;
+    height: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+}
+
+.nav
+{
+    background-color: black;
+    padding-top: 2px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.nav:hover
+{
+    color: orange;
+}
+
+#searchbar
+{
+    min-width: 300px;
+    height: 40px;
+    margin: auto;
+    margin-top: 50px;
+    display: block;
+    border-style: solid;
+    border-color: black;
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.grid-item
+{
+    margin: 5px;
+}
+
+.categories
+{
+    margin-top: 100px;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.category-title
+{
+    font-weight: bold;
+}
