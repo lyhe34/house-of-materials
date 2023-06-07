@@ -1,22 +1,96 @@
 <!DOCTYPE html>
     <html>
         <head>
-            </head><meta charset="utf-8">
+            <meta charset="utf-8">
             <title>House of Materials</title>
-            <link rel="stylesheet" type="text/css" href="C:/Users/Luc/Documents/house_of_material/src/style.css"/>
+            <link rel="stylesheet" type="text/css" href="../style.css"/>
         </head>
+        <header>
+            <a href="../index.html"><h1 id="logo">House of Materials</h1></a>
+        </header>
         <body>
-            <header>
-                <h1 id="logo">House of Materials</h1>
-            </header>
-            <body>
-                <nav>
-                    <a href="../plomberie/plomberie.html" id="nav_plomberie" class="nav">Plomberie</a>
-                    <a href="../electricite/electricite.html" id="nav_electricite" class="nav">Electricité</a>
-                    <a href="../chauffage/chauffage.html" id="nav_chauffage" class="nav">Chauffage</a>
-                    <a href="outillage.html" id="nav_outillage" class="nav">Outillage</a>
-                </nav>
-                <input id="searchbar" type="text">
-            </body>
+            <nav>
+                <div id="nav_plomberie" class="nav">
+                    <a href="../plomberie/plomberie.html" class="nav-global-link">Plomberie</a>
+                    <ul class="nav-dropdown">
+                        <a href="../plomberie/raccord_laiton.html"><li class="nav-dropdown-content" class="nav-link">Raccord laiton</li></a>
+                        <li class="nav-dropdown-content" class="nav-link">Multicouche</li>
+                        <li class="nav-dropdown-content" class="nav-link">PER</li>
+                        <li class="nav-dropdown-content" class="nav-link">Fixation Tube PER ou Multicouche</li>
+                    </ul>
+                </div>
+                <div id="nav_electricite" class="nav">
+                    <a href="../electricite/electricite.html" class="nav-global-link">Electricité</a>
+                    <ul class="nav-dropdown">
+                        <li class="nav-dropdown-content" class="nav-link">Fils, câbles et gaines</li>
+                        <li class="nav-dropdown-content" class="nav-link">Boîte d'encastrement et dérivation</li>
+                        <li class="nav-dropdown-content" class="nav-link">Tableau électrique</li>
+                        <li class="nav-dropdown-content" class="nav-link">Appareillage électrique</li>
+                    </ul>
+                </div>
+                <div id="nav_chauffage" class="nav">
+                    <a href="../chauffage/chauffage.html" class="nav-global-link">Chauffage</a>
+                    <ul class="nav-dropdown">
+                        <a href="../chauffage/plancher_chauffant_eau.html"><li class="nav-dropdown-content" class="nav-link">Plancher chauffant eau</li></a>
+                        <li class="nav-dropdown-content" class="nav-link">Plancher chauffant électrique</li>
+                        <li class="nav-dropdown-content" class="nav-link">Raccordement radiateur</li>
+                        <li class="nav-dropdown-content" class="nav-link">Équipement chaudière gaz et fioul</li>
+                    </ul>
+                </div>
+                <div id="nav_outillage" class="nav">
+                    <a href="outillage.html" class="nav-global-link">Outillage</a>
+                    <ul class="nav-dropdown">
+                        <a href="outils_plombier.html"><li class="nav-dropdown-content" class="nav-link">Outils plombier</li></a>
+                        <li class="nav-dropdown-content" class="nav-link">Outillage manuel</li>
+                        <li class="nav-dropdown-content" class="nav-link">Outillage électroportatif</li>
+                        <li class="nav-dropdown-content" class="nav-link">Foret et mèche</li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="body-top">
+                <img class="banner" src="../../images/banniere-promo-blog-blogrf3.png">
+                <div id="searchbar">
+                    <input id="searchbar-input" type="text" placeholder="Recherche..">
+                </div>
+                <img class="banner" src="../../images/VMC.png">
+            </div>    
+            <h2 class="group-title">Outillage </h2>
+            <div class="grid-container categories"> 
+                <div class="grid-item">
+                    <a href="outils_plombier.html"><img class="category-image" src="../../images/Outillage/Outils_plombier_1_2.jpg"  alt="vignette"></a><br>
+                    <h3 class="category-title">Outils plombier</h3><br>
+                    <p class="category-description">Pinces à sertir et à glissement, ébavureur, déboucheur : l'indispensable pour plombier.</p>
+                </div>
+                <div class="grid-item"> 
+                    <img class="category-image" src="../../images/Outillage/outillage_manuel_1.jpg" alt="vignette"><br>
+                    <h3 class="category-title">Outillage manuel</h3><br>
+                    <p class="category-description">Tournevis, pistolet métallique, pince de serrage, pompe à graisse, clés, douilles...</p>
+                </div>
+                <div class="grid-item">
+                    <img class="category-image" src="../../images/Outillage/outillage_electroportatif_1.jpg" alt="vignette"><br>
+                    <h3 class="category-title">Outillage électroportatif</h3><br>
+                    <p class="category-description">Tournevis, perceuse, visseuse...forets et mèches mais aussi consommables (disques à tronçonner...)</p>
+                </div>
+                <div class="grid-item">
+                    <img class="category-image" src="../../images/Outillage/foret_et_meche_1.jpg" alt="vignette"><br>
+                    <h3 class="category-title">Foret et mèche</h3><br>
+                    <p class="category-description">Forets de type SDS, multi-matériaux, métal ou bois.</p>
+                </div>
+                <div class="grid-item">
+                    <img class="category-image" src="../../images/Outillage/disque_pour_meuleuse_1.jpg" alt="vignette"><br>
+                    <h3 class="category-title">Disque pour meuleuse</h3><br>
+                    <p class="category-description">Disques diamants pour couper tous matériaux, disques abrasifs pour tronçonner.</p>
+                </div>
+                <div class="grid-item">
+                    <img class="category-image" src="../../images/Outillage/scie-cloche_et_trepan.jpg" alt="vignette"><br>
+                    <h3 class="category-title">Scie-cloche et trépan</h3><br>
+                    <p class="category-description">Scies cloches et scies trépans pour perceuse.</p>
+                </div>
+                <div class="grid-item">
+                    <img class="category-image" src="../../images/Outillage/burin_et_pic_pour_perforateur.jpg" alt="vignette"><br>
+                    <h3 class="category-title">Burin et pic pour perforateur</h3><br>
+                    <p class="category-description">Idéal pour la démolition, le rainurage et l'ouverture de passages.</p>
+                </div>
+            </div>
         </body>
     </html>

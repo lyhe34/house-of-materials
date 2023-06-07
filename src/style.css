@@ -8,12 +8,17 @@
     src: url(../fonts/Roboto.ttf);
 }
 
-:root
+@font-face {
+    font-family: Oswald;
+    src: url(../fonts/Oswald.ttf);
+}
+
+*
 {
     --header-height: 50px;
 }
 
-*:not(#logo)
+*:not(#logo, .nav-global-link)
 {
     font-family: Roboto;
 }
@@ -27,26 +32,33 @@ header
 {
     height: var(--header-height);
     background-color: orange;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 #logo
 {
     height: var(--header-height);
     margin: 0;
+    color: black;
     font-family: MegaPunch;
     text-align: center;
 }
 
-a:link, a:visited, a:hover, a:active
+a, a:link, a:visited, a:hover, a:active
 {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 nav
 {
     display: flex;
+    position: sticky;
+    z-index: 1;
+    top: var(--header-height);
     height: 50px;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background-color: black;
 }
@@ -57,6 +69,15 @@ nav
     padding-top: 2px;
     color: aliceblue;
     cursor: pointer;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: Oswald;
+    border-style: solid;
+    border-color: orange;
+    border-top: 0;
+    border-bottom: 0;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .nav:hover
@@ -64,32 +85,106 @@ nav
     color: orange;
 }
 
+.nav-dropdown
+{
+    display: none;
+    color: white;
+    background-color: black;
+    position: absolute;
+    margin: 0;
+    list-style-type: none;
+    padding: 30px;
+}
+
+.nav-global-link, .nav-global-link:link, .nav-global-link:visited, .nav-global-link:hover, .nav-global-link:active
+{
+    color: white;
+    font-family: Oswald;
+}
+
+.nav:hover .nav-dropdown
+{
+    display: block;
+}
+
+.nav-dropdown-content
+{
+    color: white;
+    padding: 10px;
+}
+
+.nav:hover .nav-dropdown
+{
+    display: block;
+    position: absolute;
+}
+
+.nav-dropdown-content:hover
+{
+    color: orange;
+}
+
+.nav-dropdown-content:link, .nav-dropdown-content:visited, .nav-dropdown-content:active
+{
+    color: white;
+}
+
+#body-top
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.banner
+{
+    width: 600px;
+    height: 150px;
+    border-radius: 10px;
+}
+
 #searchbar
 {
-    min-width: 300px;
+    width: 300px;
     height: 40px;
-    margin: auto;
-    margin-top: 50px;
-    display: block;
+    margin: 50px;
+}
+
+#searchbar-input
+{
+    width: 300px;
+    height: 40px;
     border-style: solid;
     border-color: black;
+}
+
+.group-title
+{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: xx-large;
 }
 
 .grid-container
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(3,1fr);
+    justify-content: center;
 }
 
 .grid-item
 {
-    margin: 5px;
+    
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
-.categories
+.categories, .articles
 {
-    margin-top: 100px;
     margin-right: 20%;
     margin-left: 20%;
 }
@@ -97,4 +192,74 @@ nav
 .category-title
 {
     font-weight: bold;
+}
+
+.category-image, .article-image
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+}
+
+.article-price
+{
+    color: red;
+}
+
+.article-image:hover, .category-image:hover
+{
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1000px)
+{
+    .grid-container
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1000px)
+{
+    .grid-container
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } 
+}
+
+@media screen and (max-width: 1800px) and (min-width: 1400px)
+{
+    .grid-container
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+}
+
+@media screen and (max-width: 1600px) 
+{
+    #body-top
+    {
+        display: block;
+    }
+
+    #searchbar
+    {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .banner
+    {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }

@@ -1,35 +1,96 @@
 <!DOCTYPE html>
     <html>
         <head>
-            </head><meta charset="utf-8">
+            <meta charset="utf-8">
             <title>House of Materials</title>
             <link rel="stylesheet" type="text/css" href="../style.css"/>
         </head>
         <body>
             <header>
-                <h1 id="logo">House of Materials</h1>
+                <a href="../index.html"><h1 id="logo">House of Materials</h1></a>
             </header>
-            <body>
-                <nav>
-                    <a href="plomberie.html" id="nav_plomberie" class="nav">Plomberie</a>
-                    <a href="../electricite/electricite.html" id="nav_electricite" class="nav">Electricité</a>
-                    <a href="../chauffage/chauffage.html" id="nav_chauffage" class="nav">Chauffage</a>
-                    <a href="../outillage/outillage.html" id="nav_outillage" class="nav">Outillage</a>
-                </nav>
-                <input id="searchbar" type="text">
-                <h2 style="margin-left: 20px;">Nos Catégories - Plomberie</h2>
-                <div class="grid-container categories">
-                    <div class="grid-item">
-                        <img src="../../images/Raccord_laiton.jpg">
-                        <p class="category-title">Raccord laiton</p>
-                        <p class="category-description">Large gamme : à souder, à visser, raccord rapide, raccord bicône...</p>
-                    </div>
-                    <div class="grid-item">
-                        <img src="../../images/Multicouche.jpg">
-                        <p class="category-title">Multicouche</p>
-                        <p class="category-description">La plomberie multicouche est la solution facile et fiable pour votre installation sanitaire ou chauffage.</p>
-                    </div>
+            <nav>
+                <div id="nav_plomberie" class="nav">
+                    <a href="plomberie.html" class="nav-global-link">Plomberie</a>
+                    <ul class="nav-dropdown">
+                        <a href="raccord_laiton.html"><li class="nav-dropdown-content" class="nav-link">Raccord laiton</li></a>
+                        <li class="nav-dropdown-content" class="nav-link">Multicouche</li>
+                        <li class="nav-dropdown-content" class="nav-link">PER</li>
+                        <li class="nav-dropdown-content" class="nav-link">Fixation Tube PER ou Multicouche</li>
+                    </ul>
                 </div>
-            </body>
+                <div id="nav_electricite" class="nav">
+                    <a href="../electricite/electricite.html" class="nav-global-link">Electricité</a>
+                    <ul class="nav-dropdown">
+                        <a href="../electricite/electricite_fils.html"><li class="nav-dropdown-content" class="nav-link">Fils, câbles et gaines</li></a>
+                        <li class="nav-dropdown-content" class="nav-link">Boîte d'encastrement et dérivation</li>
+                        <li class="nav-dropdown-content" class="nav-link">Tableau électrique</li>
+                        <li class="nav-dropdown-content" class="nav-link">Appareillage électrique</li>
+                    </ul>
+                </div>
+                <div id="nav_chauffage" class="nav">
+                    <a href="../chauffage/chauffage.html" class="nav-global-link">Chauffage</a>
+                    <ul class="nav-dropdown">
+                        <a href="../chauffage/plancher_chauffant_eau.html"><li class="nav-dropdown-content" class="nav-link">Plancher chauffant eau</li></a>
+                        <li class="nav-dropdown-content" class="nav-link">Plancher chauffant électrique</li>
+                        <li class="nav-dropdown-content" class="nav-link">Raccordement radiateur</li>
+                        <li class="nav-dropdown-content" class="nav-link">Équipement chaudière gaz et fioul</li>
+                    </ul>
+                </div>
+                <div id="nav_outillage" class="nav">
+                    <a href="../outillage/outillage.html" class="nav-global-link">Outillage</a>
+                    <ul class="nav-dropdown">
+                        <a href="../outillage/outils_plombier.html"><li class="nav-dropdown-content" class="nav-link">Outils plombier</li></a>
+                        <li class="nav-dropdown-content" class="nav-link">Outillage manuel</li>
+                        <li class="nav-dropdown-content" class="nav-link">Outillage électroportatif</li>
+                        <li class="nav-dropdown-content" class="nav-link">Foret et mèche</li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="body-top">
+                <img class="banner" src="../../images/banniere-promo-blog-blogrf3.png">
+                <div id="searchbar">
+                    <input id="searchbar-input" type="text" placeholder="Recherche..">
+                </div>
+                <img class="banner" src="../../images/VMC.png">
+            </div>  
+            <h2 class="group-title" style="margin-left: 20px;">Plomberie</h2>
+            <div class="grid-container categories">
+                <div class="grid-item">
+                    <a href="raccord_laiton.html"><img class="category-image" src="../../images/Raccord_laiton.jpg"></a>
+                    <p class="category-title">Raccord laiton</p>
+                    <p class="category-description">Large gamme : à souder, à visser, raccord rapide, raccord bicône...</p>
+                </div>
+                <div class="grid-item">
+                    <img class="category-image" src="../../images/Multicouche.jpg">
+                    <p class="category-title">Multicouche</p>
+                    <p class="category-description">La plomberie multicouche est la solution facile et fiable pour votre installation sanitaire ou chauffage.</p>
+                </div>
+                <div class="grid-item">
+                    <img class="category-image" src="../../images/PER.jpg">
+                    <p class="category-title">PER</p>
+                    <p class="category-description">L'indispensable pour créer sa plomberie en PER : tube, raccord à sertir, à glissement, sans soudure...</p>
+                </div>
+                <div class="grid-item">
+                    <img class="category-image" src="../../images/Fixation.jpg">
+                    <p class="category-title">Fixation Tube PER ou Multicouche</p>
+                    <p class="category-description">Fixations et outillage, pour le Multicouche et le PER.</p>
+                </div>
+                <div class="grid-item">
+                    <img class="category-image" src="../../images/Fixation.jpg">
+                    <p class="category-title">Fixation Tube PER ou Multicouche</p>
+                    <p class="category-description">Fixations et outillage, pour le Multicouche et le PER.</p>
+                </div>
+                <div class="grid-item">
+                    <img class="category-image" src="../../images/Fixation.jpg">
+                    <p class="category-title">Fixation Tube PER ou Multicouche</p>
+                    <p class="category-description">Fixations et outillage, pour le Multicouche et le PER.</p>
+                </div>
+                <div class="grid-item">
+                    <img class="category-image" src="../../images/Fixation.jpg">
+                    <p class="category-title">Fixation Tube PER ou Multicouche</p>
+                    <p class="category-description">Fixations et outillage, pour le Multicouche et le PER.</p>
+                </div>
+            </div>
         </body>
     </html>
