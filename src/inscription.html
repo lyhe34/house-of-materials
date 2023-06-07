@@ -1,14 +1,14 @@
 <!DOCTYPE html>
     <html>
         <head>
-            <meta charset="utf-8">
+            </head><meta charset="utf-8">
             <title>House of Materials</title>
             <link rel="stylesheet" type="text/css" href="style.css"/>
         </head>
         <body>
             <header>
                 <a href="index.html"><h1 id="logo">House of Materials</h1></a>
-                <a href="inscription.html"><img id="user-logo" src="../images/3201587-200.png"></a>
+                <a><img id="user-logo" src="../images/3201587-200.png"></a>
             </header>
             <nav>
                 <div id="nav_plomberie" class="nav">
@@ -48,50 +48,34 @@
                     </ul>
                 </div>
             </nav>
-            <div id="body-top">
-                <img class="banner" src="../images/banniere-promo-blog-blogrf3.png">
-                <div id="searchbar">
-                    <input id="searchbar-input" type="text" placeholder="Recherche..">
-                </div>
-                <img class="banner" src="../images/VMC.png">
-            </div>    
-            <h2 class="group-title" style="margin-left: 20px;">Recommandations</h2>
-            <div class="grid-container articles">
-                <div class="grid-item">
-                    <img class="article-image" src="../images/coude-union-femelle-laiton-a-souder_4.jpg">
-                    <p class="article-description">Dalle à plots polystyrène R0,75 Ep.25mm - Lot de 10 plaques (9,40m²)</p>
-                    <p class="article-price">149,50€</p>
-                </div>
-                <div class="grid-item">
-                    <img class="article-image" src="../images/dalle-a-plots-polystyrene-plancher-chauffant.jpg">
-                    <p class="article-description">Coude union 3 pièces 96 GCU femelle 1" (26/34) - Tube Cuivre Ø28 - Arcanaute</p>
-                    <p class="article-price">19,80€</p>
-                </div>
-                <div class="grid-item">
-                    <img class="article-image" src="../images/dalle-lisse-polyurethane-plancher-chauffant_3.jpg">
-                    <p class="article-description">Dalle lisse polyuréthane R1,85 Ep.40mm - Lot de 12 plaques (14,04m²)</p>
-                    <p class="article-price">259,80€</p>
-                </div>
-                <div class="grid-item">
-                    <img class="article-image" src="../images/pince-a-sertir-per-multicouche-mors-h-th-calibreur-ebavureur-redresseur-de-tube.jpg">
-                    <p class="article-description">Coffret Pince à sertir PER & Multicouche avec mors H & TH + Calibreur ébavureur multicouche + Redresseur - Arcanaute</p>
-                    <p class="article-price">311,80€</p>
-                </div>
-                <div class="grid-item">
-                    <img class="article-image" src="../images/pince-coupe-tube-per-r32.jpg">
-                    <p class="article-description">Pince coupe-tube PER</p>
-                    <p class="article-price">8,30€</p>
-                </div>
-                <div class="grid-item">
-                    <img class="article-image" src="../images/rouge-100m_1.jpg">
-                    <p class="article-description">Fil électrique HO7VU 1.5mm² Rouge en 100m</p>
-                    <p class="article-price">38,40€</p>
-                </div>
-                <div class="grid-item">
-                    <img class="article-image" src="../images/cableptt2.jpg">
-                    <p class="article-description">Câble PTT 298 4P en 100 mètres</p>
-                    <p class="article-price">69,90€</p>
-                </div>
+            <div id="form">
+                <h2>Formulaire d'inscription</h2>
+                <p>Veuillez remplir les informations suivantes afin de vous inscrire et de pouvoir commander sur notre site .</p>
+                <form action="pagededonnes.php" method="post">
+                    <label for="pseudo">Votre pseudo</label>
+                    <input type="text" id="pseudo" class="form-input" name="pseudo" placeholder="MartinLuc489" required>
+
+                    <label for="password">Votre mot de passe</label>
+                    <input type="password" class="form-input"  placeholder="Ex: P@ssWo4d"/>
+
+                    <label for="nom">Votre nom</label>
+                    <input type="text" id="nom" class="form-input"  name="nom" placeholder="Martin" required>
+
+                    <label for="prenom">votre prénom</label>
+                    <input type="text" id="prenom" class="form-input"  name="prenom" placeholder="Luc" required>
+
+
+                    <label for="email">Votre email</label>
+                    <input type="email" id="email" class="form-input"  name="email" placeholder="monadresse@mail.com" required>
+                 
+                    <label for="telephone">Votre numéro de téléphone</label>
+                    <input type="telephone" id="telephone" class="form-input"  name="telephone" placeholder="numéro de telephone" required>
+
+                    <label for="birthday">Date de naissance</label>
+                    <input type="date" class="form-input"/>
+
+                    <input type="submit" value="Envoyer"/>
+                </form>
             </div>
             <footer>
                 <div class="footer-item">
