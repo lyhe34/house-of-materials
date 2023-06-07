@@ -52,7 +52,7 @@ header
 #user-logo
 {
     position: absolute;
-    right: 5px;
+    right: 25px;
     top: 2.5px;
     width: 45px;
     height: 45px;
@@ -61,10 +61,19 @@ header
 #contact-logo
 {
     position: absolute;
-    right: 60px;
+    right: 85px;
     top: 5px;
     width: 40px;
     height: 40px;
+}
+
+#basket-logo
+{
+    position: absolute;
+    right: 140px;
+    top: 7px;
+    width: 35px;
+    height: 35px;
 }
 
 a, a:link, a:visited, a:hover, a:active
@@ -199,7 +208,6 @@ nav
 
 .grid-item
 {
-    
     margin-right: 5px;
     margin-left: 5px;
 }
@@ -288,6 +296,41 @@ form h1
 {
     display: grid;
     margin: 20px;
+}
+
+#basket-title
+{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#basket
+{
+    border-style: solid;
+    border-width: 1px;
+    margin: 50px;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+.basket-article
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.basket-article-image
+{
+    width: 50px;
+    height: 50px;
+}
+
+#payment-input
+{
+    width: 200px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @media screen and (max-width: 1000px)
