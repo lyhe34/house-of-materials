@@ -58,6 +58,15 @@ header
     height: 45px;
 }
 
+#contact-logo
+{
+    position: absolute;
+    right: 60px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+}
+
 a, a:link, a:visited, a:hover, a:active
 {
     text-decoration: none !important;
@@ -268,6 +277,17 @@ form
 .form-input
 {
     margin-bottom: 30px;
+}
+
+form h1
+{
+    text-align: center;
+}
+
+.contact-form-item
+{
+    display: grid;
+    margin: 20px;
 }
 
 @media screen and (max-width: 1000px)
